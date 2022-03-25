@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(120deg, rgba(246, 212, 101) 0%, rgb(253, 160, 133) 100%);
+    height: 100vh;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  margin: 5% 0;
+  letter-spacing: 1%;
+  font-size: 3.7em;
+  text-shadow: 2px 2px 3px #000000;
+}
+.metronome{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 310px;
+  height: 320px;
+  box-shadow: 2px 2px 6px #000000;
+  border-radius: 5px;
+  background-color: #ff7e33;
+}
+.metro-info{
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.tempo{
+  font-size: 4em;
+}
+.bpm{
+  font-size: 1.5em;
+}
+.metro-text{
+  font-weight: bold;
+  color: #FFFFFF; 
+}
+.metro-settings{
+  width: 310px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn-settings{
+  width: 30px;
+  height: 30px;
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.btn-settings:hover{
+  transform: scale(.95, .95);
+  transition-duration: .15s;
+  box-shadow: 1px 2px 6px #3b3b3b;
+}
+.slide{
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 65%;
+}
+.slide::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #3B3B3B;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -7px;
+}
+.slide::-webkit-slider-thumb:hover{
+  box-shadow: 2px 2px 6px #3b3b3bc4;
+}
+.slide::-webkit-slider-runnable-track{
+  height: 2px;
+  background: #FAFAFA;
+}
+.slide::-moz-range-track{
+  height: 2px;
+  background: #FAFAFA;
+}
+.rythm{
+  width: 310px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn-rythm{
+  width: 40px;
+  height: 40px;
+  background-color: #DEDEDE;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px #3b3b3b;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.btn-rythm:hover{
+  background-color: #FAFAFA;
+  transform: scale(1.05, 1.05);
+  transition-duration: .15s;
+}
+.redonda{
+  background-image: url(https://www.kazu-classicalguitar.co.uk/kazu-suwa-guitar/sites/default/files/styles/mobile_1x/public/2022-02/semibreve.png?itok=r1WPM3Qa);
+}
+.blanca{
+  background-image: url(https://o.quizlet.com/3It3mme6lpsvN3EUO5XzrQ.png);
+}
+.negra{
+  background-image: url(https://1.bp.blogspot.com/-OhIzGsRWcw8/XW_yWCzEd8I/AAAAAAAACR8/q7T01Ys6P5gMhue2uyVrNHdLO1SojIkVACLcBGAs/s1600/nota-negra.png);
+}
+.corchea{
+  background-image: url(https://i0.wp.com/mirepertorio.com/wp-content/uploads/2020/07/923fa-2-corcheas.png?w=604&ssl=1);
+}
+.semicorchea{
+  background-image: url(https://d3lqdljps13i2n.cloudfront.net/recursos/94/3019694/1495641260.jpg);
+}
+.tresillo{
+  background-image: url(https://guitarristapasoapaso.com/wp-content/uploads/2020/07/tresillo_corcheas-compressor-1.png);
+}
+.active{
+  background-color: #FAFAFA;
+  box-shadow: 4px 4px 8px #3b3b3b;
+  transform: scale(1.1, 1.1);
+}
+.btn-onOff{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF;
+  background-color: #ff6b15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 8px #3b3b3b;
+}
+.btn-onOff:hover{
+  transform: scale(.95, .95);
+  box-shadow: 2px 2px 6px #3b3b3b;
+  transition-duration: .15s;
+}
+/*.btn-play{
+  
+}*/
