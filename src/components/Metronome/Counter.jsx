@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Text from "./Text"
 import Rithmic from "./Rithmic";
+import "boxicons";
 
 
 const Metronome = () => {

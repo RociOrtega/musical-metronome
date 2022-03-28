@@ -20,7 +20,7 @@ body{
 .title{
   margin: 5% 0;
   letter-spacing: 1%;
-  font-size: 3.7em;
+  font-size: 3.5em;
   text-shadow: 2px 2px 3px #000000;
 }
 .metronome{
@@ -158,6 +158,37 @@ body{
   box-shadow: 2px 2px 6px #3b3b3b;
   transition-duration: .15s;
 }
-/*.btn-play{
-  
-}*/
+.modalWindow{
+  position: absolute;
+  top: 20%;
+  width: 40vw;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px #3b3b3b;
+  background-color: #ebe8e8;
+}
+.modal-header{
+  display: flex;
+  flex-direction: row-reverse;
+  border-bottom: #c9c6c6 solid 2px;
+}
+.modal-button{
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  height: 10%;
+  background-color: #dc3545;
+  border-radius: 2px;
+  margin: 1%;
+}
+.modal-content{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 2%;
+}
+@media only screen and (max-width: 700px) {
+  .modalWindow{
+    width: 90vw;
+  }
+}

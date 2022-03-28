@@ -6,10 +6,10 @@ const PlayOff = (props) => {
     const [sound, setSound] = useState(false);
 
     const bpm = props.interval;
-    const audioClick = new Audio(audio)
 
     useEffect(() => {
         const interval = setInterval(() => {
+            const audioClick = new Audio(audio)
             if(sound){audioClick.play();}
         }, bpm);
         return () => {
@@ -18,19 +18,15 @@ const PlayOff = (props) => {
     },[bpm, sound]);
 
     function soundSettings(){
-        if(button){
-            setSound(true)
-            setButton(false)
-        }else{
-            setSound(false)
-            setButton(true)
-        }
+        setSound(!sound);
+        setButton(!button);
     }
     //modal de encendido y apagado, imagen de play y pausa
     return (
         <div>
             <button className="btn-onOff" onClick={soundSettings}>
-                <div className="btn-play"></div> 
+                {button ? <box-icon name='play' color="white" animation="flashing-hover"></box-icon>
+                :<box-icon name='pause' color="white" animation="flashing-hover"></box-icon>}
             </button>
         </div>
     );
