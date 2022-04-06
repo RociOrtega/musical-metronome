@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import Text from "./Text"
-import Rithmic from "./Rithmic";
+import Text from "../Metronome/textDinamic/Text";
+import Rithmic from "../Metronome/rithmic/Rithmic";
 import "boxicons";
 
 
