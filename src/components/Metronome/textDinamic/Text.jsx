@@ -7,9 +7,7 @@ const Text = (props) => {
     const bpm = props.bpm;
     useEffect(() => {
         dinamics.map((item) => {
-            if(bpm >= item.bpmMin && bpm <= item.bpmMax){
-                setDescription(item.name)
-            }
+            return (bpm >= item.bpmMin && bpm <= item.bpmMax) ? setDescription(item.description) : null
         })
     }, [bpm])
     return(
