@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Text from "../Metronome/textDinamic/Text";
+import DinamicDescription from "../Metronome/textDinamic/DinamicDescription";
 import Rithmic from "../Metronome/rithmic/Rithmic";
 import "boxicons";
 
@@ -29,7 +29,7 @@ const Metronome = () => {
                     <span className="tempo">{bpm}</span>
                     <span className="bpm">bpm</span>
                 </div>
-                <Text bpm={bpm} />
+                <DinamicDescription bpm={bpm} />
                 <div className="metro-settings">
                     <button type="button" className="btn-settings" onClick={minus}><box-icon name='minus'></box-icon></button>
                     <input type="range" min="20" max="300" step="1" onChange={slide} value={bpm} className="slide"></input>

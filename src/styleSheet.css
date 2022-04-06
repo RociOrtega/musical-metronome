@@ -46,10 +46,6 @@ body{
 .bpm{
   font-size: 1.5em;
 }
-.metro-text{
-  font-weight: bold;
-  color: #FFFFFF; 
-}
 .metro-settings{
   width: 310px;
   display: flex;
