@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import PlayOff from "./PlayOff";
-import Modal from "../Modal";
+import PlayOff from "../PlayOff";
+import Modal from "../../Modal";
 
 const Rithmic = (props) => {
     let bpm = props.bpm;
@@ -52,6 +52,8 @@ const Rithmic = (props) => {
         setModal(true);
         setRedondaClass(''); setBlancaClass(''); setNegraClass(''); setCorcheaClass(''); setSemicorcheaClass(''); setTresilloClass('active');}
 
+
+    //Estos botones pueden ser un array y luego leerlo con map
     return (
         <>
             <div className="rythm">
