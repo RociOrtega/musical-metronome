@@ -1,23 +1,24 @@
 import React from "react";
-import { useState } from "react";
-import DinamicDescription from "../Metronome/textDinamic/DinamicDescription";
-import Rithmic from "../Metronome/rithmic/Rithmic";
 import "boxicons";
-
+import "./styleSheetButtons/buttonsInputStyle.css"
+import "./styleSheetText/textDescription.css"
+import { useState } from "react";
+import DinamicDescription from "../textDinamic/DinamicDescription";
+import Rithmic from "../rithmic/Rithmic";
 
 const Metronome = () => {
     const [bpm, setBpm] = useState(160);
-    function plus(){
+    const plus = () =>{
         if(bpm < 300){
             setBpm(bpm + 1);
         }
     } 
-    function minus(){
+    const minus = () => {
         if(bpm > 20){
             setBpm(bpm - 1);
         }
     }
-    function slide(e){
+    const slide = (e) => {
         const slideValue = Number(e.target.value);
         setBpm(slideValue);
     }
@@ -27,7 +28,7 @@ const Metronome = () => {
             <section className="metronome">
                 <div className="metro-info">
                     <span className="tempo">{bpm}</span>
-                    <span className="bpm">bpm</span>
+                    <span className="bpm">bpm</span> 
                 </div>
                 <DinamicDescription bpm={bpm} />
                 <div className="metro-settings">

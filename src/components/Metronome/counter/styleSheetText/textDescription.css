@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title{
+    margin: 5% 0;
+    letter-spacing: 1%;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 3px #000000;
+  }
+  .metronome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 310px;
+    height: 320px;
+    box-shadow: 2px 2px 6px #000000;
+    border-radius: 5px;
+    background-color: #ff7e33;
+  }
+  .metro-info{
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .tempo{
+    font-size: 4em;
+  }
+  .bpm{
+    font-size: 1.5em;
+  }

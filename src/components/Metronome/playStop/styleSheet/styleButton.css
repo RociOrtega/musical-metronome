@@ -1,0 +1,17 @@
+.btn-onOff{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    background-color: #ff6b15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px #3b3b3b;
+  }
+  .btn-onOff:hover{
+    transform: scale(.95, .95);
+    box-shadow: 2px 2px 6px #3b3b3b;
+    transition-duration: .15s;
+  }

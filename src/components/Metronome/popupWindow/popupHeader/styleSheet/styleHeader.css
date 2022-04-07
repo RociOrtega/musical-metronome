@@ -1,0 +1,14 @@
+.modal-header{
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: #c9c6c6 solid 2px;
+}
+.modal-button{
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    background-color: #dc3545;
+    border-radius: 2px;
+    margin: 1%;
+}

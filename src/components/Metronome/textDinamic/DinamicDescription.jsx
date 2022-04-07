@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { dinamics } from "./dinamics";
-import './dinamicTextStyle.css'
+import './styleSheet/dinamicTextStyle.css'
 
 const DinamicDescription = (props) => {
     const[description, setDescription] = useState("Allegro - Presto")
