@@ -28,7 +28,7 @@ const Metronome = () => {
             <section className="metronome">
                 <div className="metro-info">
                     <span className="tempo">{bpm}</span>
-                    <span className="bpm">bpm</span>
+                    <span className="bpm">bpm</span> 
                 </div>
                 <DinamicDescription bpm={bpm} />
                 <div className="metro-settings">
